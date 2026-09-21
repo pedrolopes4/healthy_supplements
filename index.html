@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Healthy Supplements</title>
+    <link rel="stylesheet" href="src/CSS/indexStyle.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Oswald:wght@200..700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="src/CSS/IMAGES/favicon.png" type="image/x-icon" />
+  </head>
+  <body>
+    <!-- Barra de progresso -->
+    <div id="progress-bar-conteiner">
+      <div id="sale">
+        <p>
+          Adicione <strong>R$ 250,00</strong> ao carrinho para ter
+          <strong>FRETE GRÁTIS</strong>
+        </p>
+      </div>
+      <select name="Selecione o estado" id="state">
+        <button><selectedcontent></selectedcontent></button>
+        <option value="sao_paulo" selected>São Paulo</option>
+        <option value="rio_de_janeiro">Rio de Janeiro</option>
+        <option value="bahia">Bahia</option>
+      </select>
+    </div>
+
+    <!-- Animated bar -->
+    <div id="animated_bar">
+      <p><strong>OFERTA EXCLUSIVA | CREATINA 500G | R$ 74,90</strong></p>
+      <p><strong>OFERTA EXCLUSIVA | CREATINA 500G | R$ 74,90</strong></p>
+      <p><strong>OFERTA EXCLUSIVA | CREATINA 500G | R$ 74,90</strong></p>
+      <p><strong>OFERTA EXCLUSIVA | CREATINA 500G | R$ 74,90</strong></p>
+    </div>
+    <!-- Cabeçalho -->
+    <header>
+      <!-- marca d'agua -->
+      <img src="src/CSS/IMAGES/logo_saude_suplementa.png" alt="logo_heathy" />
+      <h1>
+        Heathy <br />
+        Supplements
+      </h1>
+      <!-- research bar -->
+      <div id="research_bar">
+        <input
+          type="text"
+          name="buscar_produto"
+          id="search"
+          placeholder="Encontre o suplemento ideal para você"
+          autocomplete="off"
+          role="combobox"
+          aria-expanded="false"
+        />
+
+        <button><img src="src/CSS/IMAGES/lupa-icon.svg" alt="lupa" /></button>
+      </div>
+      <div id="header-nav">
+        <!-- login -->
+        <div id="login">
+          <img src="src/CSS/IMAGES/login-icon.svg" alt="login" />
+          <p><a href="">Cadastre-se</a> ou <a href="">faça seu login</a></p>
+        </div>
+        <!-- Favoritos -->
+        <div id="favorites">
+          <a href="">
+            <img src="src/CSS/IMAGES/heart.png" alt="heart" />
+            <span>Favoritos</span>
+          </a>
+        </div>
+
+        <!-- Suporte -->
+        <div>
+          <img src="src/CSS/IMAGES/phone-icon.svg" alt="phone" />
+          <a href=""
+            ><strong
+              >Fale conosco <br />
+              Clique aqui</strong
+            ></a
+          >
+        </div>
+      </div>
+
+      <!-- products nav -->
+      <div id="products-nav-conteiner">
+        <img src="src/CSS/IMAGES/linhas-nav.svg" alt="lines" />
+        <span>Categorias</span>
+        <img src="src/CSS/IMAGES/up-arrow.svg" alt="up-arrow" />
+
+        <!-- items -->
+        <div id="items">
+          <span class="cinza"> TOP 20</span>
+          <span class="cinza"> LANÇAMENTOS</span>
+          <span class="cinza"> WHEY</span>
+          <span class="cinza"> CREATINA</span>
+          <span class="cinza"> KITS</span>
+          <span class="cinza"> OFERTAS</span>
+          <span class="cinza"> PRÉ-TREINO</span>
+          <span class="cinza"> ROUPAS</span>
+        </div>
+      </div>
+      <!-- Summer's Sale -->
+      <div id="promocao-verao">
+        <img src="src/CSS/IMAGES/sol-verao.svg" alt="sol">
+        <p id="titulo">O VERÃO ESTÁ CHEGANDO</p>
+        <p>Chegue com o melhor resultado. Comece agora.</p>
+
+        <!-- Contador de Tempo até a Promoção Acabar -->
+        <div id="contador-tempo">
+            <div id="days">91 <br> DIAS</div>
+            <span id="contador-tempo-separador">:</span>
+            <div id="hours">01 <br> HORAS</div>
+            <span id="contador-tempo-separador">:</span>
+            <div id="minutes">17 <br> MINUTOS</div>
+            <span id="contador-tempo-separador">:</span>
+            <div id="seconds">12 <br> SEGUNDOS</div>
+
+        </div>
+      </div>
+    </header>
+  </body>
+</html>

@@ -1,0 +1,55 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+#progress-bar-conteiner {
+  padding: 0.8rem 2.4rem;
+  position: relative;
+  height: 4.4rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2.4rem;
+
+  background-color: #1d5e90;
+}
+
+#sale {
+  color: white;
+  background-color: #174568;
+
+  font-size: 1.6rem;
+  width: 60rem;
+  height: 2.8rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 10px;
+}
+
+#progress-bar-conteiner select {
+    appearance: none;
+  background: transparent;
+  background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMS4xMzgiIGhlaWdodD0iNi4zNjgiIHZpZXdCb3g9IjAgMCAxMS4xMzggNi4zNjgiPgogIDxwYXRoIGlkPSJJY29uX2lvbmljLWlvcy1hcnJvdy1iYWNrIiBkYXRhLW5hbWU9Ikljb24gaW9uaWMtaW9zLWFycm93LWJhY2siIGQ9Ik0xMy4xNywxMS43NjEsMTcuMzg1LDcuNTVhLjguOCwwLDAsMC0xLjEyNy0xLjEyNEwxMS40ODIsMTEuMmEuNzk0Ljc5NCwwLDAsMC0uMDIzLDEuMWw0Ljc5NSw0LjhhLjguOCwwLDAsMCwxLjEyNy0xLjEyNFoiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC02LjE5NCAxNy42MTgpIHJvdGF0ZSgtOTApIiBmaWxsPSIjZmZmIi8+Cjwvc3ZnPgo=);
+  background-position: right 8px center;
+  background-repeat: no-repeat;
+  border: none;
+  border-bottom: solid 1px #fff;
+  border-radius: initial;
+  color: #fff;
+  font-size: 1.6rem;
+  padding: 0px 28px 0px 4px;
+}
+
+header img {
+  height: 20px;
+}
