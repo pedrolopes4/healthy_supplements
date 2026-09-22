@@ -11,6 +11,13 @@
       href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Oswald:wght@200..700&display=swap"
       rel="stylesheet"
     />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap"
+      rel="stylesheet"
+    />
     <link rel="icon" href="src/CSS/IMAGES/favicon.png" type="image/x-icon" />
   </head>
   <body>
@@ -40,11 +47,13 @@
     <!-- Cabeçalho -->
     <header>
       <!-- marca d'agua -->
-      <img src="src/CSS/IMAGES/logo_saude_suplementa.png" alt="logo_heathy" />
-      <h1>
-        Heathy <br />
-        Supplements
-      </h1>
+      <div id="marcadagua">
+        <img src="src/CSS/IMAGES/logo_saude_suplementa.png" alt="logo_heathy" />
+        <h1>
+          HEALTHY <br />
+          SUPPLEMENTS
+        </h1>
+      </div>
       <!-- research bar -->
       <div id="research_bar">
         <input
@@ -57,13 +66,15 @@
           aria-expanded="false"
         />
 
-        <button><img src="src/CSS/IMAGES/lupa-icon.svg" alt="lupa" /></button>
+        <button>
+          <img src="src/CSS/IMAGES/lupa-icon.svg" alt="lupa" id="lupa" />
+        </button>
       </div>
       <div id="header-nav">
         <!-- login -->
         <div id="login">
           <img src="src/CSS/IMAGES/login-icon.svg" alt="login" />
-          <p><a href="">Cadastre-se</a> ou <a href="">faça seu login</a></p>
+          <p><a href="">Cadastre-se</a> ou <br> <a href="">faça seu login</a></p>
         </div>
         <!-- Favoritos -->
         <div id="favorites">
@@ -74,7 +85,7 @@
         </div>
 
         <!-- Suporte -->
-        <div>
+        <div id="support">
           <img src="src/CSS/IMAGES/phone-icon.svg" alt="phone" />
           <a href=""
             ><strong
@@ -83,44 +94,59 @@
             ></a
           >
         </div>
-      </div>
-
-      <!-- products nav -->
-      <div id="products-nav-conteiner">
-        <img src="src/CSS/IMAGES/linhas-nav.svg" alt="lines" />
-        <span>Categorias</span>
-        <img src="src/CSS/IMAGES/up-arrow.svg" alt="up-arrow" />
-
-        <!-- items -->
-        <div id="items">
-          <span class="cinza"> TOP 20</span>
-          <span class="cinza"> LANÇAMENTOS</span>
-          <span class="cinza"> WHEY</span>
-          <span class="cinza"> CREATINA</span>
-          <span class="cinza"> KITS</span>
-          <span class="cinza"> OFERTAS</span>
-          <span class="cinza"> PRÉ-TREINO</span>
-          <span class="cinza"> ROUPAS</span>
-        </div>
-      </div>
-      <!-- Summer's Sale -->
-      <div id="promocao-verao">
-        <img src="src/CSS/IMAGES/sol-verao.svg" alt="sol">
-        <p id="titulo">O VERÃO ESTÁ CHEGANDO</p>
-        <p>Chegue com o melhor resultado. Comece agora.</p>
-
-        <!-- Contador de Tempo até a Promoção Acabar -->
-        <div id="contador-tempo">
-            <div id="days">91 <br> DIAS</div>
-            <span id="contador-tempo-separador">:</span>
-            <div id="hours">01 <br> HORAS</div>
-            <span id="contador-tempo-separador">:</span>
-            <div id="minutes">17 <br> MINUTOS</div>
-            <span id="contador-tempo-separador">:</span>
-            <div id="seconds">12 <br> SEGUNDOS</div>
-
-        </div>
+        <button>
+          <div id="sales-cart">
+            <img src="src/CSS/IMAGES/cart.png" alt="cart" />
+          </div>
+        </button>
       </div>
     </header>
+    <!-- products nav -->
+    <div id="products-nav-conteiner">
+      <img src="src/CSS/IMAGES/linhas-nav.svg" alt="lines" />
+      <span>Categorias</span>
+      <img src="src/CSS/IMAGES/up-arrow.svg" alt="up-arrow" />
+
+      <!-- items -->
+      <div id="items">
+        <span class="cinza"> TOP 20</span>
+        <span class="cinza"> LANÇAMENTOS</span>
+        <span class="cinza"> WHEY</span>
+        <span class="cinza"> CREATINA</span>
+        <span class="cinza"> KITS</span>
+        <span class="cinza"> OFERTAS</span>
+        <span class="cinza"> PRÉ-TREINO</span>
+        <span class="cinza"> ROUPAS</span>
+      </div>
+    </div>
+    <!-- Summer's Sale -->
+    <div id="promocao-verao">
+      <img src="src/CSS/IMAGES/sol-verao.svg" alt="sol" />
+      <p id="titulo">O VERÃO ESTÁ CHEGANDO</p>
+      <p>Chegue com o melhor resultado. Comece agora.</p>
+
+      <!-- Contador de Tempo até a Promoção Acabar -->
+      <div id="contador-tempo">
+        <div id="days">
+          91 <br />
+          DIAS
+        </div>
+        <span id="contador-tempo-separador">:</span>
+        <div id="hours">
+          01 <br />
+          HORAS
+        </div>
+        <span id="contador-tempo-separador">:</span>
+        <div id="minutes">
+          17 <br />
+          MINUTOS
+        </div>
+        <span id="contador-tempo-separador">:</span>
+        <div id="seconds">
+          12 <br />
+          SEGUNDOS
+        </div>
+      </div>
+    </div>
   </body>
 </html>

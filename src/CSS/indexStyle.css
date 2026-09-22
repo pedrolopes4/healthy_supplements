@@ -1,3 +1,5 @@
+/* UNIVERSAIS */
+
 * {
   padding: 0;
   margin: 0;
@@ -5,9 +7,27 @@
 }
 
 html {
-  font-size: 62.5%;
+  font-size: 0.62em;
+}
+img {
+  width: 10rem;
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  background: inherit;
+  border: inherit;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+/* PROGRESS BAR */
 #progress-bar-conteiner {
   padding: 0.8rem 2.4rem;
   position: relative;
@@ -18,12 +38,12 @@ html {
   align-items: center;
   gap: 2.4rem;
 
-  background-color: #1d5e90;
+  background-color: #ff7b00;
 }
 
 #sale {
   color: white;
-  background-color: #174568;
+  background-color: #000000;
 
   font-size: 1.6rem;
   width: 60rem;
@@ -37,7 +57,7 @@ html {
 }
 
 #progress-bar-conteiner select {
-    appearance: none;
+  appearance: none;
   background: transparent;
   background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMS4xMzgiIGhlaWdodD0iNi4zNjgiIHZpZXdCb3g9IjAgMCAxMS4xMzggNi4zNjgiPgogIDxwYXRoIGlkPSJJY29uX2lvbmljLWlvcy1hcnJvdy1iYWNrIiBkYXRhLW5hbWU9Ikljb24gaW9uaWMtaW9zLWFycm93LWJhY2siIGQ9Ik0xMy4xNywxMS43NjEsMTcuMzg1LDcuNTVhLjguOCwwLDAsMC0xLjEyNy0xLjEyNEwxMS40ODIsMTEuMmEuNzk0Ljc5NCwwLDAsMC0uMDIzLDEuMWw0Ljc5NSw0LjhhLjguOCwwLDAsMCwxLjEyNy0xLjEyNFoiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC02LjE5NCAxNy42MTgpIHJvdGF0ZSgtOTApIiBmaWxsPSIjZmZmIi8+Cjwvc3ZnPgo=);
   background-position: right 8px center;
@@ -50,6 +70,159 @@ html {
   padding: 0px 28px 0px 4px;
 }
 
+/* ANIMATED BAR */
+#animated_bar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+
+  height: 3.2rem;
+
+  position: relative;
+
+  font-size: 1.4rem;
+  font-weight: 700;
+
+  background-color: rgb(204, 109, 0);
+  color: #fff;
+}
+
+/* HEADER */
+header {
+  height: 7.818rem;
+  padding: 1.2rem 3.5rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.6rem;
+
+  background-image: linear-gradient(45deg, rgb(255, 150, 58), rgb(255, 128, 0));
+  color: #fff;
+}
+
 header img {
-  height: 20px;
+  height: 3rem;
+  width: 3rem;
+}
+
+#marcadagua {
+  flex-basis: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+#marcadagua img {
+  width: 6rem;
+  height: 6rem;
+}
+
+#marcadagua h1 {
+  width: 16.8rem;
+  height:auto;
+  line-height: 1.9rem;
+}
+
+#marcadagua h1::first-line {
+  font-size: 3rem;
+  font-family: "Archivo Black", sans-serif;
+}
+
+#marcadagua h1::first-letter {
+  font-size: 4rem;
+}
+
+#marcadagua h1 {
+  font-size: 1.5rem;
+  font-style: italic;
+}
+
+/* RESEARCH BAR */
+#research_bar {
+  flex-basis: 33.3%;
+  background-color: #fff;
+  border-radius: 1rem;
+  width: auto;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#research_bar input {  
+  width: 40rem;
+  height: 5.2rem;
+  padding: 1.7rem 2.8rem;
+
+  font-size: 1.6rem;
+  border: none;
+  border-radius: inherit;
+}
+
+#research_bar button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 8rem;
+  height: 5.2rem;
+  padding: 0.1rem 0.6rem;
+
+  background-color: inherit;
+  border: none;
+  border-radius: inherit;
+}
+
+#research_bar #lupa {
+  width: 1.95rem;
+  height: 1.856rem;
+}
+
+/* HEADER NAV */
+#header-nav {
+  flex-basis: 40.3%;
+  gap: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#header-nav #login {
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  line-height: 1.8rem;
+  gap: 1rem;
+}
+
+#login a {
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+
+#favorites a {
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  font-size: 1.8rem;
+  font-weight: 700;
+  gap: 1rem;
+}
+
+#support {
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  line-height: 2.5rem;
+  font-size: 1.8rem;
+  font-weight: 700;
+  gap: 1rem;
+}
+
+#sales-cart img{
+  width: 5.1rem;
+  height: 4.4rem;
 }
