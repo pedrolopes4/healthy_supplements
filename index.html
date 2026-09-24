@@ -18,144 +18,242 @@
       href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap"
       rel="stylesheet"
     />
-    <link rel="icon" href="src/CSS/IMAGES/favicon.png" type="image/x-icon" />
+    <link rel="icon" href="src/CSS/IMAGES/logo_saude_suplementa.png" type="image/x-icon" />
   </head>
   <body>
-    <!-- Barra de progresso -->
-    <div id="progress-bar-conteiner">
-      <div id="sale">
-        <p>
-          <strong> Adicione R$ 250,00 ao carrinho para ter FRETE GRÁTIS</strong>
-        </p>
-      </div>
-      <select name="Selecione o estado" id="state">
-        <button><selectedcontent></selectedcontent></button>
-        <option value="sao_paulo" selected>São Paulo</option>
-        <option value="rio_de_janeiro">Rio de Janeiro</option>
-        <option value="bahia">Bahia</option>
-      </select>
-    </div>
-
-    <!-- Animated bar -->
-    <div id="animated_bar">
-      <p><strong>OFERTA EXCLUSIVA | CREATINA 500G | R$ 74,90</strong></p>
-      <p><strong>OFERTA EXCLUSIVA | CREATINA 500G | R$ 74,90</strong></p>
-      <p><strong>OFERTA EXCLUSIVA | CREATINA 500G | R$ 74,90</strong></p>
-      <p><strong>OFERTA EXCLUSIVA | CREATINA 500G | R$ 74,90</strong></p>
-    </div>
-    <!-- Cabeçalho -->
     <header>
-      <!-- marca d'agua -->
-      <div id="marcadagua">
-        <img src="src/CSS/IMAGES/logo_saude_suplementa.png" alt="logo_heathy" />
-        <h1>
-          HEALTHY <br />
-          SUPPLEMENTS
-        </h1>
-      </div>
-      <!-- research bar -->
-      <div id="research_bar">
-        <input
-          type="text"
-          name="buscar_produto"
-          id="search"
-          placeholder="Encontre o suplemento ideal para você"
-          autocomplete="off"
-          role="combobox"
-          aria-expanded="false"
-        />
-
-        <button>
-          <img src="src/CSS/IMAGES/lupa-icon.svg" alt="lupa" id="lupa" />
-        </button>
-      </div>
-      <div id="header-nav">
-        <!-- login -->
-        <div id="login">
-          <img src="src/CSS/IMAGES/login-icon.svg" alt="login" />
+      <!-- Barra de progresso -->
+      <div id="progress-bar-conteiner">
+        <div id="sale">
           <p>
-            <a href="">Cadastre-se</a> ou <br />
-            <a href="">faça seu login</a>
+            <strong>
+              Adicione R$ 250,00 ao carrinho para ter FRETE GRÁTIS</strong
+            >
           </p>
         </div>
-        <!-- Favoritos -->
-        <div id="favorites">
-          <a href="">
-            <img src="src/CSS/IMAGES/heart.png" alt="heart" />
-            <span>Favoritos</span>
-          </a>
-        </div>
-
-        <!-- Suporte -->
-        <div id="support">
-          <img src="src/CSS/IMAGES/phone-icon.svg" alt="phone" />
-          <a href=""
-            ><strong
-              >Fale conosco <br />
-              Clique aqui</strong
-            ></a
-          >
-        </div>
-        <button>
-          <div id="sales-cart">
-            <img src="src/CSS/IMAGES/cart.png" alt="cart" />
-          </div>
-        </button>
+        <select name="Selecione o estado" id="state">
+          <button><selectedcontent></selectedcontent></button>
+          <option value="sao_paulo" selected>São Paulo</option>
+          <option value="rio_de_janeiro">Rio de Janeiro</option>
+          <option value="bahia">Bahia</option>
+        </select>
       </div>
-    </header>
-    <!-- products nav -->
-    <section id="section-categories-nav">
-      <div id="categories-nav-conteiner">
-        <a href="" id="menu-categories">
-          <img src="src/CSS/IMAGES/linhas-nav.svg" alt="lines" id="linhas" />
-          <span>CATEGORIAS</span>
-          <img src="src/CSS/IMAGES/up-arrow.svg" alt="up-arrow" id="arrow" />
+      <!-- Animated bar -->
+      <div id="animated-bar">
+        <a href="">
+          <p>
+            <span id="p-animated-bar"
+              >OFERTA EXCLUSIVA | CREATINA 500G | R$ 74,90</span
+            >
+          </p>
         </a>
-
-        <!-- items -->
-         <ul id="categories-list">
-          <li><span class="category"> TOP 20</span></li>
-          <li><span class="category"> LANÇAMENTOS</span></li>
-          <li><span class="category"> WHEY</span></li>
-          <li><span class="category"> CREATINA</span></li>
-          <li><span class="category"> KITS</span></li>
-          <li><span class="category"> OFERTAS</span></li>
-          <li><span class="category"> PRÉ-TREINO</span></li>
-          <li><span class="category"> ROUPAS</span></li>
-          <li><span class="category"> ACESSÓRIOS</span></li>
-          <li><span class="category"> KITS</span></li>
-          <li><span class="category"> OFERTAS</span></li>
-        </ul>
+        <a href="">
+          <p>
+            <span id="p-animated-bar"
+              >OFERTA EXCLUSIVA | CREATINA 500G | R$ 74,90</span
+            >
+          </p>
+        </a>
+        <a href="">
+          <p>
+            <span id="p-animated-bar"
+              >OFERTA EXCLUSIVA | CREATINA 500G | R$ 74,90</span
+            >
+          </p>
+        </a>
+        <a href="">
+          <p>
+            <span id="p-animated-bar"
+              >OFERTA EXCLUSIVA | CREATINA 500G | R$ 74,90</span
+            >
+          </p>
+        </a>
       </div>
-    </section>
-    <!-- Summer's Sale -->
-    <div id="promocao-verao">
-      <img src="src/CSS/IMAGES/sol-verao.svg" alt="sol" />
-      <p id="titulo">O VERÃO ESTÁ CHEGANDO</p>
-      <p>Chegue com o melhor resultado. Comece agora.</p>
-
-      <!-- Contador de Tempo até a Promoção Acabar -->
-      <div id="contador-tempo">
-        <div id="days">
-          91 <br />
-          DIAS
+      <!-- Cabeçalho -->
+      <div id="main-menu">
+        <!-- marca d'agua -->
+        <div id="marcadagua">
+          <h1>
+            HEALTHY <br />
+            SUPPLEMENTS
+          </h1>
         </div>
-        <span id="contador-tempo-separador">:</span>
-        <div id="hours">
-          01 <br />
-          HORAS
+        <!-- research bar -->
+        <div id="research_bar">
+          <input
+            type="text"
+            name="buscar_produto"
+            id="search"
+            placeholder="Encontre o suplemento ideal para você"
+            autocomplete="off"
+            role="combobox"
+            aria-expanded="false"
+          />
+          <button>
+            <img src="src/CSS/IMAGES/lupa-icon.svg" alt="lupa" id="lupa" />
+          </button>
         </div>
-        <span id="contador-tempo-separador">:</span>
-        <div id="minutes">
-          17 <br />
-          MINUTOS
-        </div>
-        <span id="contador-tempo-separador">:</span>
-        <div id="seconds">
-          12 <br />
-          SEGUNDOS
+        <div id="header-nav">
+          <!-- login -->
+          <div id="login">
+            <img src="src/CSS/IMAGES/login-icon.svg" alt="login" />
+            <p>
+              <a href="">Cadastre-se</a> ou <br />
+              <a href="">faça seu login</a>
+            </p>
+          </div>
+          <!-- Favoritos -->
+          <div id="favorites">
+            <a href="">
+              <img src="src/CSS/IMAGES/heart.png" alt="heart" />
+              <span>Favoritos</span>
+            </a>
+          </div>
+          <!-- Suporte -->
+          <div id="support">
+            <img src="src/CSS/IMAGES/phone-icon.svg" alt="phone" />
+            <a href="">
+              Fale Conosco <br />
+              Clique aqui
+            </a>
+          </div>
+          <button>
+            <div id="sales-cart">
+              <img src="src/CSS/IMAGES/cart.png" alt="cart" />
+            </div>
+          </button>
         </div>
       </div>
-    </div>
+      <!-- products nav -->
+      <section id="section-categories-nav">
+        <div id="categories-nav-conteiner">
+          <a href="" id="menu-categories">
+            <img src="src/CSS/IMAGES/linhas-nav.svg" alt="lines" id="linhas" />
+            <span>CATEGORIAS</span>
+            <img src="src/CSS/IMAGES/up-arrow.svg" alt="up-arrow" id="arrow" />
+          </a>
+          <!-- items -->
+          <ul id="categories-list">
+            <li><span class="category"> TOP 20</span></li>
+            <li><span class="category"> LANÇAMENTOS</span></li>
+            <li><span class="category"> WHEY PROTEIN</span></li>
+            <li><span class="category"> CREATINA</span></li>
+            <li><span class="category"> VITAMINAS</span></li>
+            <li><span class="category"> PRÉ-TREINO</span></li>
+            <li><span class="category"> OBJETIVOS</span></li>
+            <li><span class="category"> SNACKS</span></li>
+            <li><span class="category"> ROUPAS</span></li>
+            <li><span class="category"> ACESSÓRIOS</span></li>
+            <li><span class="category"> KITS</span></li>
+            <li><span class="category"> OFERTAS</span></li>
+          </ul>
+        </div>
+      </section>
+      <!-- Summer's Sale -->
+      <section class="section-contador-de-verao">
+        <div id="contador-verao-conteiner">
+          <div class="titulo-verao">
+            <img src="src/CSS/IMAGES/sol-verao.svg" alt="sol" />
+            <p id="titulo">O VERÃO ESTÁ CHEGANDO!</p>
+          </div>
+          <div id="frase-verao">
+            <p>Chegue com o melhor resultado. Comece agora!</p>
+          </div>
+          <!-- Contador de Tempo até a Promoção Acabar -->
+          <div id="contador-tempo" role="timer">
+            <div id="days">
+              <span class="time">91</span> <br />
+              DIAS
+            </div>
+            <span id="contador-tempo-separador">:</span>
+            <div id="hours">
+              <span class="time">01</span> <br />
+              HORAS
+            </div>
+            <span id="contador-tempo-separador">:</span>
+            <div id="minutes">
+              <span class="time">17</span> <br />
+              MINUTOS
+            </div>
+            <span id="contador-tempo-separador">:</span>
+            <div id="seconds">
+              <span class="time">12</span> <br />
+              SEGUNDOS
+            </div>
+          </div>
+        </div>
+      </section>
+    </header>
+    <!-- MAIN -->
+    <!-- BANNER PRINCIPAL -->
+    <main>
+      <section class="banner-principal">
+        <div class="detalhes-container">
+          <div>
+            <button class="setas-bannerprincipal" id="seta-esquerda">
+              <img src="src/CSS/IMAGES/seta-esquerda.png" alt="seta-esquerda" />
+            </button>
+          </div>
+          <div>
+            <button class="setas-bannerprincipal" id="seta-direita">
+              <img src="src/CSS/IMAGES/seta-direita.png" alt="seta-direita" />
+            </button>
+          </div>
+        </section>
+          <!-- DETAILS -->
+        <section class="detalhes">
+          <!-- FRETE -->
+          <div class="detalhes-conteiner">
+            <div class="cartao-detalhes">
+              <div class="icons-detalhes-conteiner">
+                <img src="src/CSS/IMAGES/caminhao.svg" alt="caminhao">
+              </div>
+              <div class="texto-detalhes">
+                <p><span class="realce-texto-detalhes">Frete grátis a partir de R$ 200,00*</span></p>
+                <a href="">Consulte condições</a>
+              </div>
+            </div>
+            <!-- DESCONTO BOLETO -->
+             <div class="cartao-detalhes">
+              <div class="icons-detalhes-conteiner">
+                <img src="src/CSS/IMAGES/codigo-barras.svg" alt="codigo-barras" style="width: 3.3rem; height: 3.3rem;;">
+              </div>
+              <div class="texto-detalhes">
+                <p><span class="realce-texto-detalhes">Compre com 10% de desconto no boleto ou PIX</span></p>
+              </div>
+            </div>
+            <!-- CASHBACK -->
+             <div class="cartao-detalhes">
+              <div class="icons-detalhes-conteiner">
+                <img src="src/CSS/IMAGES/cashback-icon.svg" alt="cashback icon">
+              </div>
+              <div class="texto-detalhes">
+                <p><span class="realce-texto-detalhes">CASHBACK GPONTOS</span></p>
+                <a href="">Consulte condições</a>
+              </div>
+            </div>
+            <!-- NUTRICIONISTA -->
+             <div class="cartao-detalhes">
+              <div class="icons-detalhes-conteiner">
+                <img src="src/CSS/IMAGES/mensagem-icon.svg" alt="mensagem icon">
+              </div>
+              <div class="texto-detalhes">
+                <p><span class="realce-texto-detalhes">Nutricionista Esportivo</span></p>
+                <a href="">Clique aqui</a>
+              </div>
+            </div>
+            <!-- cartao de crédito (juros) -->
+             <div class="cartao-detalhes">
+              <div class="icons-detalhes-conteiner">
+                <img src="src/CSS/IMAGES/cartao_credito.svg" alt="cartao_credito">
+              </div>
+              <div class="texto-detalhes">
+                <p><span class="realce-texto-detalhes">Compras em até 6x sem juros</span></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
   </body>
 </html>
