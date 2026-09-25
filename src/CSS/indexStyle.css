@@ -12,7 +12,7 @@ html {
   max-width: 100vw;
   overflow-y: auto;
   overflow-x: hidden;
-  background-image: linear-gradient(90deg, rgb(201, 201, 201), #ececec);
+  background-image: linear-gradient(90deg, rgb(237, 237, 237), #ececec);
 }
 img {
   width: 10rem;
@@ -45,6 +45,13 @@ header {
   z-index: 10;
 }
 
+select::picker-icon{
+  display: none;
+}
+
+option::checkmark {
+  visibility: hidden;
+}
 /* PROGRESS BAR */
 #progress-bar-conteiner {
   padding: 0.8rem 2.4rem;
@@ -75,7 +82,8 @@ header {
 }
 
 #progress-bar-conteiner select {
-  appearance: none;
+  &, &::picker(select){
+  appearance: base-select;}
   background: transparent;
   background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMS4xMzgiIGhlaWdodD0iNi4zNjgiIHZpZXdCb3g9IjAgMCAxMS4xMzggNi4zNjgiPgogIDxwYXRoIGlkPSJJY29uX2lvbmljLWlvcy1hcnJvdy1iYWNrIiBkYXRhLW5hbWU9Ikljb24gaW9uaWMtaW9zLWFycm93LWJhY2siIGQ9Ik0xMy4xNywxMS43NjEsMTcuMzg1LDcuNTVhLjguOCwwLDAsMC0xLjEyNy0xLjEyNEwxMS40ODIsMTEuMmEuNzk0Ljc5NCwwLDAsMC0uMDIzLDEuMWw0Ljc5NSw0LjhhLjguOCwwLDAsMCwxLjEyNy0xLjEyNFoiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC02LjE5NCAxNy42MTgpIHJvdGF0ZSgtOTApIiBmaWxsPSIjZmZmIi8+Cjwvc3ZnPgo=);
   background-position: right 8px center;
@@ -86,7 +94,12 @@ header {
   color: #fff;
   font-size: 1.6rem;
   padding: 0px 28px 0px 4px;
+  width: 17.8rem;
 }
+
+#progress-bar-conteiner option {
+  color: #000;
+} 
 
 /* ANIMATED BAR */
 #animated-bar {
@@ -299,10 +312,10 @@ header {
 
 #menu-categories span {
   font-size: 1.4rem;
-  font-weight: 530;
+  font-weight: 600;
   line-height: 0px;
 
-  color: #ff7b00;
+  color: #532800;
 }
 
 #categories-nav-conteiner #categories-list {
@@ -396,10 +409,10 @@ header {
   flex-direction: column;
   line-height: 0.7;
 
-  box-shadow: 0px 0.3rem 10px black;
+  box-shadow: 0px 0.3rem 10px rgba(0, 0, 0, 0.481);
 
-  background-color: hsl(30, 100%, 50%);
-  border: solid 1px rgba(255, 255, 255, 0.413);
+  background: rgba(255, 128, 0, 0.593);
+  border: solid 1px rgba(255, 255, 255, 0.215);
   color: black;
   font-weight: 550;
 
@@ -420,10 +433,10 @@ header {
   flex-direction: column;
   line-height: 0.7;
 
-  box-shadow: 0px 0.3rem 10px black;
+  box-shadow: 0px 0.3rem 10px rgba(0, 0, 0, 0.481);
 
-  background: hsla(30, 100%, 50%, 0.14);
-  border: solid 1px rgba(255, 255, 255, 0.413);
+  background: hsla(30, 100%, 56%, 0.46);
+  border: solid 1px rgba(255, 255, 255, 0.215);
   color: black;
   font-weight: 550;
 
@@ -438,10 +451,10 @@ header {
   flex-direction: column;
   line-height: 0.7;
 
-  box-shadow: 0px 0.3rem 10px black;
+  box-shadow: 0px 0.3rem 10px rgba(0, 0, 0, 0.481);
 
-  background: hsla(30, 100%, 50%, 0.14);
-  border: solid 1px rgba(255, 255, 255, 0.413);
+  background: hsla(30, 100%, 66%, 0.46);
+  border: solid 1px rgba(255, 255, 255, 0.215);
   color: black;
   font-weight: 550;
 
@@ -456,10 +469,10 @@ header {
   flex-direction: column;
   line-height: 0.7;
 
-  box-shadow: 0px 0.3rem 10px black;
+  box-shadow: 0px 0.3rem 10px rgba(0, 0, 0, 0.481);
 
-  background: hsla(30, 100%, 50%, 0.14);
-  border: solid 1px rgba(255, 255, 255, 0.413);
+  background: hsla(30, 100%, 76%, 0.46);
+  border: solid 1px rgba(255, 255, 255, 0.215);
   color: black;
   font-weight: 550;
 
@@ -473,12 +486,6 @@ header {
 .banner-principal {
   max-width: 100%;
   height: 341px;
-
-  background-image: url(https://www.gsuplementos.com.br/upload/banner/05a1ba61db39d03cb4b606409aa04b0d.webp);
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-
   position: relative;
 
   display: flex;
@@ -486,12 +493,46 @@ header {
   align-items: center;
 }
 
+.banner-principal a {
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  background-image: url(https://www.gsuplementos.com.br/upload/banner/05a1ba61db39d03cb4b606409aa04b0d.webp);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.banner-principal a:hover {
+  background-size: 102%;
+}
+/* AS BARRAS DEVEM SERVIR DE NAVEGAÇÃO PELOS BANNERS COM JAVASCRIPT */
+.main-banner-nav {
+  position: absolute;
+  right: 31%;
+  bottom: 3rem;
+  z-index: 0;
+  width: 47.2rem;
+
+  display: flex;
+  /* justify-content: space-between; */
+  gap: 1rem;
+}
+
+.main-banner-bar{
+  width: 3rem;
+  height: 0.6rem;
+  flex: 10;
+  border-radius: 10px;
+  background-color: #ffffff78;
+}
+
 .setas-bannerprincipal {
   display: flex;
   align-items: center;
   height: 4.8rem;
   width: 4.8rem;
-
+  z-index: 0;
   padding: 0.7rem;
 
   border-radius: 50%;
@@ -502,12 +543,14 @@ header {
 .setas-bannerprincipal img {
   width: 1.8rem;
   height: 1.8rem;
+  z-index: 0;
 }
 
 #seta-esquerda {
   position: absolute;
   top: 50%;
   left: -22px;
+  z-index: 0;
 
   display: flex;
   align-items: center;
@@ -518,7 +561,7 @@ header {
   position: absolute;
   top: 50%;
   right: -22px;
-
+  z-index: 0;
   display: flex;
   align-items: center;
   justify-content: left;
@@ -542,11 +585,6 @@ header {
   gap: 2rem;
 }
 
-.detalhes-conteiner img {
-  width: 4rem;
-  height: 4rem;
-}
-
 .cartao-detalhes {
   flex: 1;
 
@@ -559,6 +597,7 @@ header {
   display: flex;
   align-items: center;
 }
+
 
 .icons-detalhes-conteiner {
   background-color: #ff9100;
@@ -573,17 +612,116 @@ header {
 }
 
 .texto-detalhes {
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   height: auto;
   line-height: 1.6;
+  position: static;
+}
+
+.texto-detalhes a {
+  text-decoration: underline;
 }
 
 .realce-texto-detalhes:first-child {
   font-weight: 700;
-  font-size: 1.4rem;
+  font-size: 1.2rem;
 }
 
 .realce-texto-detalhes {
   font-weight: 600;
   font-size: 1rem;
+}
+
+/* Promocao dupla */
+.promocao-dupla-mes {
+  width: 100%;
+  height: 26.33rem;
+
+  display: flex;
+  justify-content: center;
+  gap: 2.0rem;
+  align-items: center;
+
+  padding: 0px 2.4rem;
+}
+
+.promocao-dupla img {
+  height: auto;
+  width: 100%;
+}
+
+/* CATEGORIAS SUPLEMENTOS */
+.apresentacao-suplementos {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 4.8rem 0px 0px 0px;
+}
+
+.suplementos-conteiner {
+  width: 128.5rem; 
+  height: 69.7rem;
+  /* margin: 4.8rem 0px 0px 0px; */
+  padding: 2.4rem;
+  background-color: #fff;
+  border-radius: 15px;
+  border: solid 1px #fff;
+  box-shadow: 0px 1px 10px 1px #0000000f;
+}
+
+.titulo-suplementos {
+  width: auto;
+  height: 10.5rem;
+  padding: 3.4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(90deg,rgb(181, 133, 71), rgb(49, 28, 0));
+  border-radius: 10px;
+  border: solid #000 0.5px;
+  margin: 0px 0px 2.4rem 0px;
+}
+
+.titulo-suplementos h2 {
+  font-size: 2.4rem;
+  text-transform: uppercase;
+  font-weight: 750;
+  letter-spacing: 0.1rem;
+  color: #fff;
+}
+
+.botoes-categorias-suplementos {
+  width: auto;
+  height: 5.98rem;
+  margin: 0px 0px 2rem 0px;
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.botoes-categorias-suplementos button {
+  flex: 1;
+  text-transform: uppercase;
+  padding: 2rem;
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #df7000;
+  border-radius: 10px;
+  border: solid 1px #df7000;
+  height: inherit;
+}
+
+.botoes-categorias-suplementos button:hover {
+  background-color: #ff81022c;
+}
+
+/* AQUI O USUÁRIO PODERÁ ESCOLHER QUAL MENU APARECERÁ (JAVASCRIPT) */
+.botoes-categorias-suplementos button:first-child /* (OPÇÃO PADRÃO QUE PODE SER TROCADA PELO USUÁRIO) */ { 
+  background-color: #df7000;
+  color: #fff;
+}
+
+/* PRODUTOS EXIBIDOS DEPENDENDO DA OPÇÃO */
+.opcoes-suplementos {
+  width: max-content;
 }
