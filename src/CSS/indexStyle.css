@@ -660,7 +660,7 @@ option::checkmark {
 
 .suplementos-conteiner {
   width: 128.5rem; 
-  height: 69.7rem;
+  height: max-content;
   /* margin: 4.8rem 0px 0px 0px; */
   padding: 2.4rem;
   background-color: #fff;
@@ -723,5 +723,126 @@ option::checkmark {
 
 /* PRODUTOS EXIBIDOS DEPENDENDO DA OPÇÃO */
 .opcoes-suplementos {
-  width: max-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: max-content;
 }
+
+.opcao-oferta-exclusiva {
+  flex: 1;
+  position: relative;
+  border-radius: 12px;
+  height: 10rem;
+  /* background-color: #000; */
+}
+
+.opcao-oferta-exclusiva img {
+  width: 100%;
+  height: 100%;
+  /* position: relative; */
+  border-radius: 12px;
+}
+
+.box-opcao-exclusiva {
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  height: 7.5rem;
+  bottom: 0rem;
+  color: #fff;
+  font-size: 1.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 2.4rem;
+  background-image: linear-gradient(180deg, transparent, rgba(0, 0, 0, 0.757));
+  border-radius: 12px;
+}
+
+.opcao-oferta-exclusiva .seta-direita {
+  width: 1rem;
+  height: 1rem;
+} 
+
+.opcao-cards-conteiner {
+  flex: 4;
+  display: flex;
+}
+
+.opcao-suplemento-card {
+  flex: 1;
+  width: 33%;
+  height: 40rem;
+  display: flex;
+  flex-flow: column nowrap;
+  border: solid 1px rgba(0, 0, 0, 0.13);
+  padding: 1.3rem 1rem 0.8rem;
+  position: relative;
+}
+
+.desconto-opcao {
+  width: 5.4rem;
+  height: 2.8rem;
+  background-color: #FF4500;
+  color: #fff;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 0.3rem;
+  border-radius: 10px 10px 0px 10px;
+}
+
+.button-adicionarfavoritos {
+  width: 3.2rem;
+  height: 3.2rem;
+  border-radius: 50%;
+  box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.25);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  right: 0.8rem;
+  top: 0.8rem;
+}
+
+.button-adicionarfavoritos img {
+  width: 2rem;
+  height: 2rem;
+}
+
+.div-adicionarfavoritos {
+  width: 16.5rem;
+  height: 2.95;
+  padding: 0.8rem;
+  background-color: #ffffff80;
+  border: solid 1px rgba(0, 0, 0, 0.318);
+  border-radius: 60px;
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  backdrop-filter: blur(2px);
+  position: absolute;
+  top: 0.8rem;
+  left: 1.5rem;
+  visibility: hidden;
+}
+
+.button-adicionarfavoritos:hover + .div-adicionarfavoritos {
+  visibility: visible;
+}
+
+.img-suplemento {
+  width: 20.65rem;
+  height: 25.5rem;
+}
+
+.card-name-conteiner {
+  width: 20.6rem;
+  height: 4.2rem;
+}
+
